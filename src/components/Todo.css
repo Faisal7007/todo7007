@@ -1,0 +1,116 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h1 {
+    color: #f1d5b0;
+  }
+  
+  .output_box {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  .output_box h2 {
+    /* color: #321802; */
+    color:#180c01 ;
+  }
+  .todo_logo {
+    height: 100px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #f4ae75;
+  }
+  
+  .todo_content_inner > span > input {
+    padding: 15px 20px;
+    width: 31.6vw;
+  
+    border-radius: 8px;
+  }
+  
+  .add_btn {
+    padding: 14px;
+    border-radius: 4px;
+    /* background-color: rgb(39, 232, 39); */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .add_btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(131, 222, 131);
+    font-size: 15px;
+  }
+  
+  .delete_btn {
+    padding: 14px;
+    border-radius: 4px;
+    color: wheat;
+    background-color: black;
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .delete_btn:hover {
+    color: red;
+    font-size: 15px;
+  }
+  
+  .h2 {
+    width: 30vw;
+    padding: 6px;
+    background-color: rgb(194, 139, 101);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: all 0.1s;
+    word-break: break-all;
+  }
+  
+  .h2:hover {
+    background-color: rgb(166, 109, 67);
+    color: #de9e4b;
+  }
+  
+  .todo_contents {
+    width: 70vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    transition: all 0.6s;
+  }
+  
+  .todo_contents:hover {
+    margin-top: .2px;
+  }
+  
+  .todo_content_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .clearAll_btn {
+    padding: 14px;
+    border-radius: 4px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  
+    color: red;
+  
+    /* background-color: rgba(0, 0, 0,1); */
+    background-color: rgb(223, 198, 198);
+    border: none;
+  }
+  
+  .clearAll_btn:hover {
+    font-size: 15px;
+    color: wheat;
+    background-color: red;
+  }
+  
