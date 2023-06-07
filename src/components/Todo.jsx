@@ -1,8 +1,6 @@
-
 import React, { useEffect, useState } from "react";
 import "./Todo.css";
-// import todoimg from "./images/todoImg.png";
-import bAndwlogo from './images/bAndwlogo.png'
+import bAndwlogo from "./images/bAndwlogo.png";
 
 const getLocalItems = () => {
   let list = JSON.parse(localStorage.getItem("myList"));
@@ -83,7 +81,12 @@ function Todo() {
           <br />
 
           <span>
-            <input type="text" value={inputData} onChange={handleInput} placeholder={'✍️ Add todo...'} />
+            <input
+              type="text"
+              value={inputData}
+              onChange={handleInput}
+              placeholder={"✍️ Add todo..."}
+            />
 
             {toggle ? (
               <button className="add_btn" onClick={addValue}>
@@ -96,24 +99,27 @@ function Todo() {
             )}
           </span>
 
-          {todo && todo.map((item) => (
-            <div className="output_box" key={item.id}>
-              <button className="add_btn" onClick={() => editValue(item.id)}>
-                Edit
-              </button>
-              <h2 className="h2">{item.result}</h2>
-              <button
-                className="delete_btn"
-                onClick={() => deleteValue(item.id)}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
+          {todo &&
+            todo.map((item) => (
+              <div className="output_box" key={item.id}>
+                <button className="add_btn" onClick={() => editValue(item.id)}>
+                  Edit
+                </button>
+                <h2 className="h2">{item.result}</h2>
+                <button
+                  className="delete_btn"
+                  onClick={() => deleteValue(item.id)}
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
           <br />
 
           {clearToggle ? (
-            <button className="clearAll_btn" onClick={handleClearAll}>Clear All</button>
+            <button className="clearAll_btn" onClick={handleClearAll}>
+              Clear All
+            </button>
           ) : (
             ""
           )}
