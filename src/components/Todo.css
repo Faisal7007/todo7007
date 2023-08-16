@@ -43,7 +43,7 @@ h1 {
 .add_btn:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgb(131, 222, 131);
-  font-size: 15px;
+ 
 }
 
 .delete_btn {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .clearAll_btn:hover {
-  font-size: 15px;
+ 
   color: wheat;
   background-color: red;
 }
